@@ -39,6 +39,7 @@ display: flex;
     background-color: #E95A08;
     color: white;
     border: none;
+    font-size: 1rem;
 }
 
 
@@ -57,7 +58,7 @@ display: flex;
 .nav-link, .nav-link1{
     text-decoration: none;
 }
-.navbar, .banner{
+.navbar, .banner, .card-containers, .Plants-lover-section{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -94,14 +95,40 @@ display: flex;
     gap: 20px;
     margin: 0 150px;
     
-
 }
 .card-containers, .card button{
     width: 270px;
     padding: 19px 80px;
 }
 
+.Plants-lover-section{
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    padding-top: 83px;
+}
+.Plants-lover-section img{
+    width: 540px;
+    height: 597px;
+}
+.Plants-lover-section h1{
+    width: 540px;
+    height: 137px;
+}
+.Plants-lover-section ul li{
+    padding-top: 20px;
+    width: 540px;
+    height: 108px;
+}
 
+#badge{
+    width: 287px;
+    height: 287px;
+    margin-top: -438px;
+    margin-left: -347px;
+    margin-bottom: 127px;
+    margin-right: -160px;
+}
 /* responsive media query  */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -128,20 +155,41 @@ display: flex;
 
     .banner{
         flex-direction: column-reverse;
-        max-width: 100%;
         margin: 28px 16px;
     }
     .leftside-banner{
         width: 361px;
     }
+    .banner, .rightside-banner, img{
+         max-width: 100%;
+    }
+
 
     .card-containers{
         grid-template-columns: repeat(2, 1fr);
-       
+        margin: auto 0;  
     }
    .card-containers, .card img{
-    width: 100%;
+    width: 171px;
     
+}
+.card-containers, .card button{
+    width: 171px;
+    padding: 19px 30px;
+    font-size: 0.8rem;
+}
+.Plants-lover-section{
+    flex-direction: column;
+}
+.Plants-lover-section #badge{
+    display: none;
+}
+.Plants-lover-section h1{
+    width: 361px;
+}
+.Plants-lover-section ul li{
+    width: 361px;
+ 
 }
 
 }
