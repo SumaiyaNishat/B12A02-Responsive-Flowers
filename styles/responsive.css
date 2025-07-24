@@ -58,7 +58,7 @@ display: flex;
 .nav-link, .nav-link1{
     text-decoration: none;
 }
-.navbar, .banner, .card-containers, .Plants-lover-section{
+.navbar, .banner, .card-containers, .Plants-lover-section, .footer{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -130,6 +130,20 @@ display: flex;
     margin-right: -160px;
 }
 
+.footer{
+    justify-content: space-between;
+    gap: auto;
+}
+.footer ul li{
+    list-style: none;
+    padding-top: 32px;
+}
+
+.website-logo{
+    padding-bottom: 69px;
+    width: 359px;
+}
+
 /* Join Section styles*/
 .join-section{
     background-image: url(../assets/news-letter-bg.png);
@@ -162,7 +176,6 @@ display: flex;
 /* responsive media query  */
 @media screen and (max-width: 576px) {
     .navbar{
-        flex-direction: row;
         max-width: 100%;
     }
     .nav-links {
@@ -192,8 +205,6 @@ display: flex;
     .leftside-banner{
         width: 361px;
     }
-   
-
     .card-containers{
         grid-template-columns: repeat(2, 1fr);
         margin: auto 0;  
@@ -231,6 +242,16 @@ display: flex;
 }
 .join-section .subscribe-button{
     width: 103px;
+}
+.footer{
+    flex-direction: column;
+    padding-left: 20px;
+}
+.footer .website-logo{
+    padding-bottom: 0;
+}
+.footer .icons{
+    padding-top: 20px;
 }
 }
 
