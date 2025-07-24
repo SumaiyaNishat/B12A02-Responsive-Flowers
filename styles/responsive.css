@@ -29,6 +29,18 @@ display: flex;
 .font-size1{
     font-size: 1.375rem;
 }
+.font-weight{
+    font-weight: 400;
+}
+.font-weight1{
+    font-weight: bold;
+}
+.btn{
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
+
 
 
 /* navber styles */
@@ -64,6 +76,31 @@ display: flex;
 .rightside-banner{
     padding-top: 106px;
 }
+/* plant-section style */
+.Plants-Section{
+  text-align: center;
+}
+.card-containers, .card img{
+    width: 100%;
+    /* height: 322px; */
+    padding-bottom: 30px;
+}
+.card-containers, .card, .card-body{
+    padding-bottom: 30px;
+}
+.card-containers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 150px;
+    
+
+}
+.card-containers, .card button{
+    width: 270px;
+    padding: 19px 80px;
+}
+
 
 /* responsive media query  */
 @media screen and (max-width: 576px) {
@@ -97,8 +134,15 @@ display: flex;
     .leftside-banner{
         width: 361px;
     }
+
+    .card-containers{
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+   .card-containers, .card img{
+    width: 100%;
     
 }
 
-
+}
 
