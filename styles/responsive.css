@@ -58,7 +58,7 @@ display: flex;
 .nav-link, .nav-link1{
     text-decoration: none;
 }
-.navbar, .banner, .card-containers, .Plants-lover-section, .footer{
+.navbar, .banner, .card-containers, .Plants-lover-section, .footer, .optional{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -93,6 +93,7 @@ display: flex;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    max-width: 1140px;
     margin: 0 150px;
     
 }
@@ -172,6 +173,48 @@ display: flex;
     
     
 }
+.optional{
+    text-align: center;
+    padding-top: 120px;
+    gap: 28px;
+    
+}
+.optional .two-offer{
+    padding-top: 120px; 
+    color: white; 
+   
+}
+.optional .two-offer .offer1{
+    background-image: url(../assets/deal-bloom.png);
+    width: 366px;
+    height: 201px;
+    border-radius: 10px;
+}
+.optional .two-offer .offer2{
+    background-image: url(../assets/deal-ana.png);
+    margin-top: 35%;
+     width: 366px;
+    height: 201px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+.optional .two-offer .offer3{
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 753px;
+    height: 423px;
+    margin-left: 28px;
+    border-radius: 10px;
+}
+.optional .two-offer h6{
+   padding-top: 65px;
+}
+ .offer3,h6{
+     padding-top: 172px;
+} 
+
+
 
 /* responsive media query  */
 @media screen and (max-width: 576px) {
@@ -252,6 +295,16 @@ display: flex;
 }
 .footer .icons{
     padding-top: 20px;
+}
+.optional .two-offer{
+    flex-direction: column;
+    padding: 20px;
+}
+.optional .two-offer .offer3{
+    width: 361px;
+    height: 172px;
+    margin-top: 60%;
+    margin-left: 5px;
 }
 }
 
